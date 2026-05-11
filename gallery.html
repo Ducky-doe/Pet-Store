@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, minimum-scale=1" />
+	<meta name="description" content="This is an example of a meta description. This will often show up in search results so it is important to write a high quality description for each page of a website">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Pet Gallery | Adorable Pets Waiting for You | Pets 4 Everyone</title>
+	<!-- Bootstrap Stylesheet-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<header>
+		<img src="images/logo.png" alt="logo" height="570" width="269" class="img-fluid logo">
+	</header>
+
+
+	<nav class="navbar navbar-expand-sm navbar-light bg-light">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+    	</button>
+
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+    			<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+      			<li class="nav-item active"><a class="nav-link" href="about-us.html">About Us</a></li>
+      			<li class="nav-item active"><a class="nav-link" href="pet-finder.html">Pet Finder</a></li>
+      			<li class="nav-item active"><a class="nav-link" href="gallery.html">Gallery</a></li>      
+    		</ul>
+    	</div>
+    </nav>
+
+ 
+
+	<main> 
+	<!--  Bootstrap columns -->
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 text-center mb-4">
+					<h1>Our Pet Gallery</h1>
+					<p class="lead">Click on any thumbnail below to see a larger view of our adorable pets!</p>
+				</div>
+			</div>
+			
+			<!--  preview image display area  -->
+			<div class="row">
+				<div class="col-sm-12 text-center mb-4">
+					<div class="preview">
+						<img id="preview" src="images/cat-1.jpg" alt="Pet gallery preview - click thumbnails to change image" style="max-width:100%; max-height:500px; border-radius:18px; box-shadow:0 6px 14px rgba(0,0,0,0.2);"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="gallery-thumbnails" style="margin:0 auto; text-align:center">
+						<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" src="images/animal.jpg" alt="Cute puppy thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src= document.getElementById('img2').src;" id="img2" src="images/ara.jpg" alt="Colorful macaw parrot thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img3').src;" id="img3" src="images/budgie.jpg" alt="Budgie bird thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img4').src;" id="img4" src="images/bulldog.jpg" alt="English bulldog thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img5').src;" id="img5" src="images/chameleon.jpg" alt="Chameleon lizard thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img6').src;" id="img6" src="images/chinchilla.jpg" alt="Fluffy chinchilla thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img7').src;" id="img7" src="images/fish.jpg" alt="Colorful fish in aquarium thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img8').src;" id="img8" src="images/guinea-pig.jpg" alt="Guinea pig thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img9').src;" id="img9" src="images/hedgehog.jpg" alt="Hedgehog thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img10').src;" id="img10" src="images/kitty-5.jpg" alt="Adorable kitten thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img11').src;" id="img11" src="images/lizard.jpg" alt="Green lizard on branch thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img12').src;" id="img12" src="images/nature.jpg" alt="Peaceful nature scene thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        				<img onclick="document.getElementById('preview').src = document.getElementById('img13').src;" id="img13" src="images/veiltail.jpg" alt="Veiltail fish thumbnail" style="width:100px; height:75px; margin:3px 10px 10px 0; cursor:pointer;" />
+        			</div>
+        		</div>
+        	</div>
+        	
+        	<!-- extra content -->
+        	<div class="row mt-5">
+        		<div class="col-sm-12 text-center">
+        			<div class="p-4 rounded" style="background: #F9F2FC;">
+        				<h3>❤️ See a pet you love? ❤️</h3>
+        				<p>Come visit our store at 235 Marshall Ave, St Paul, MN to meet them in person!</p>
+        				<a href="about-us.html" class="btn btn-primary" style="background-color:#93278E; border-color:#93278E;">Visit Our Store</a>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+		
+	</main>
+
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<h4>🐾 Pets 4 Everyone!</h4>
+        			<p>235 Marshall Ave, St Paul, MN 55102</p>
+        			<p>Phone: 1-800-WELOVEPETS</p>
+        			<p>Email: owner@pets4everyone.com</p>
+      			</div>
+
+      			<div class="col-sm-6">
+      				<h4>🕐 Hours</h4>
+        			<p>Mon-Thu: 9am - 8pm</p>
+        			<p>Friday: 9am - 6pm</p>
+        			<p>Saturday: 9am - 4pm</p>
+        			<p>Sunday: Closed</p>
+      			</div>
+
+      			<div class="col-sm-6">
+      				<h4>Let's Connect!</h4>
+      			</div>
+      			<div class="row">
+      				<div class="col-sm-3">
+      					<a href="https://www.facebook.com/" aria-label="Facebook">
+      						<i class="fa fa-facebook" aria-hidden="true"></i>
+      					</a>
+      				</div>
+    				<div class="col-sm-3">
+        				<a href="https://www.twitter.com/" aria-label="Twitter">
+            				<i class="fa fa-twitter" aria-hidden="true"></i>
+        				</a>
+    				</div>
+    				<div class="col-sm-3">
+        				<a href="https://www.instagram.com/" aria-label="Instagram">
+            				<i class="fa fa-instagram" aria-hidden="true"></i>
+        				</a>
+    				</div>
+    				<div class="col-sm-3">
+        				<a href="https://www.pinterest.com/" aria-label="Pinterest">
+        					<i class="fa fa-pinterest" aria-hidden="true"></i>
+        				</a>
+        			</div>
+        		</div>
+			</div>
+		</div>
+		
+
+        <small>&copy; 2026 Pets 4 Everyone. All rights reserved.</small>
+	</footer>	
+	<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
